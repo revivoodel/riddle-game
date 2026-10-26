@@ -17,6 +17,11 @@ import MultipleChoiceRiddle from './classes/MultipleChoiceRiddle.js';
 
 import PromptSync from 'prompt-sync';
 import AllRiddles from './riddles/index.js';
+const Difficulty = {
+    EASY: "1",
+    MEDIUM: "2",
+    HARD: "3"
+};
 
 const prompt = PromptSync();
 
@@ -25,11 +30,33 @@ const player = new Player(name);
 
 console.log(`Hello ${name}`);
 console.log("Let's start the game!");
+console.log("choose difficult:");
+console.log("[1] easy");
+console.log("[2] medium");
+console.log("[3] hard");
+let dif;
+do {
+    dif = prompt();
+} while (dif < "1" || dif > "3")
 
+switch (dif) {
+    case Difficulty.EASY:
+        console.log("---------EASY-LAVEL-----------");
+        break
+    case Difficulty.MEDIUM:
+        console.log("---------MEDIUM-LAVEL-----------");
 
-for (let riddleData of AllRiddles) {
+        break
+    case Difficulty.HARD:
+        console.log("---------HARD-LAVEL-----------");
 
+        break
 
+}
+
+const filterRiddles = AllRiddles.filter(riddle => { return riddle.difficulty == dif })
+filterRiddles.sort(() => Math.random() - 0.5);
+for (let riddleData of filterRiddles) {
     const start = Date.now();
 
     const riddle = new MultipleChoiceRiddle(
@@ -37,14 +64,17 @@ for (let riddleData of AllRiddles) {
         riddleData.name,
         riddleData.taskDescription,
         riddleData.correctAnswer,
-        riddleData.choices
+        riddleData.choices,
+        riddleData.difficulty,
+        riddleData.timeLimit,
+        riddleData.hint
     );
-    riddle.ask(prompt);
+    let sumPenalties = riddle.ask(prompt);
 
     const end = Date.now();
 
-    player.recordTime(start, end);
+    player.recordTime(start, end, sumPenalties);
 
 }
 
-    player.showStats();
+player.showStats();

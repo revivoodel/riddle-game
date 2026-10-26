@@ -10,5 +10,8 @@ export default {
     name: "Algebra Challenge",
     taskDescription: "Solve for x: 3x + 7 = 28",
     correctAnswer: "4",
-    choices: ["5", "9", "6", "7"]
+    choices: ["5", "9", "6", "7"],
+     difficulty:"2",
+     timeLimit:7,
+     hint:"3x = 21"
 };

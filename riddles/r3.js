@@ -10,5 +10,8 @@ export default {
     name: "Order of Operations",
     taskDescription: "What is 12 + 6 × 3?",
     correctAnswer: "2",
-    choices: ["54", "30", "36", "24"]
+    choices: ["54", "30", "36", "24"],
+     difficulty:"2",
+     timeLimit:7,
+     hint:"6 × 3 = 18"
 };

@@ -14,8 +14,8 @@ export default class Player {
         this.name = name;
         this.times = [];
     }
-    recordTime(start, end) {
-        const duration = (end - start) / 1000;
+    recordTime(start, end,sumPenalties) {
+        const duration = ((end - start) / 1000)+sumPenalties;
         this.times.push(duration);
     }
     showStats(){

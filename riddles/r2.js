@@ -10,5 +10,8 @@ export default {
     name: "Multiplication Challenge",
     taskDescription: "What is 7 × 6?",
     correctAnswer: "3",
-    choices: ["36", "48", "42", "56"]
+    choices: ["36", "48", "42", "56"],
+     difficulty:"1",
+     timeLimit:5,
+     hint:"7 * 5 = 35"
 };

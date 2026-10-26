@@ -10,5 +10,8 @@ export default {
     name: "Final Math Boss",
     taskDescription: "Solve for x: 2(x + 5)² = 98",
     correctAnswer: "3",
-    choices: ["7", "9", "2 or -12", "4 or -14"]
+    choices: ["7", "9", "2 or -12", "4 or -14"],
+     difficulty:"3",
+     timeLimit:8,
+     hint:"(x + 5)² = 49"
 };
