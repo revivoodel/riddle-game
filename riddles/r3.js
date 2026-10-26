@@ -4,3 +4,11 @@
 // - name (string)
 // - taskDescription (string, the riddle text shown to the player)
 // - correctAnswer (string)
+// Question 3 - Medium
+export default {
+    id: 3,
+    name: "Order of Operations",
+    taskDescription: "What is 12 + 6 × 3?",
+    correctAnswer: "2",
+    choices: ["54", "30", "36", "24"]
+};

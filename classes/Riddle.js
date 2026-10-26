@@ -11,3 +11,28 @@
 //   - show the riddle (name and taskDescription) to the player
 //   - ask the player for an answer using the `prompt` function that is passed in
 //   - keep asking until the answer is correct
+
+
+export default class Riddle {
+    constructor(id, name, taskDescription, correctAnswer) {
+        this.id = id;
+        this.name = name;
+        this.taskDescription = taskDescription;
+        this.correctAnswer = correctAnswer;
+    }
+
+    ask(prompt) {
+        let answer;
+        console.log(`----- ${this.name} -----`);
+        console.log(this.taskDescription);
+        do {
+            answer = prompt("Enter your answer: ");
+            (answer === this.correctAnswer) ? console.log("Correct!") : console.log("Wrong answer, try again!");
+        } while (answer !== this.correctAnswer);
+        console.log("---------------------");
+    }
+
+
+};
+
+
