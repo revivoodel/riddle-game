@@ -1,7 +1,9 @@
 
 // api/riddlesApi.js
 
+
 const URL = "http://localhost:3000/riddles";
+
 
 export async function getAllRiddles() {
     try {
