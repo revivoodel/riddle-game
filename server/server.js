@@ -10,8 +10,8 @@ const PORT = 3000;
 app.use(express.json());
 
 
-app.use("/riddles", riddlesRouter);
-app.use("/players", playersRouter);
+app.use("/api/riddles", riddlesRouter);
+app.use("/api/players", playersRouter);
 
 
 app.listen(PORT, () => {

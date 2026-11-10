@@ -1,5 +1,5 @@
 
-const URL = "http://localhost:3000/players";
+const URL = "http://localhost:3000/api/players";
 
 // 1 - Find player by name
 export async function findPlayerByName(name) {
