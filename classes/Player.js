@@ -14,18 +14,18 @@ export default class Player {
         this.name = name;
         this.times = [];
     }
-    recordTime(start, end,sumPenalties) {
-        const duration = ((end - start) / 1000)+sumPenalties;
+    recordTime(start, end, sumPenalties) {
+        const duration = ((end - start) / 1000) + sumPenalties;
         this.times.push(duration);
     }
-    showStats(){
-        let sumTime=0
-        this.times.forEach(time => { sumTime+=time});
+    showStats() {
+        let sumTime = 0
+        this.times.forEach(time => { sumTime += time });
         console.log("\n\n\n");
         console.log("--------- GAME STATS ---------");
         console.log(`Total Riddles: ${this.times.length}`);
         console.log(`Total Time: ${sumTime} seconds`);
-        console.log(`Average Time: ${sumTime/this.times.length} seconds`);
+        console.log(`Average Time: ${sumTime / this.times.length} seconds`);
         console.log("------------------------------");
     }
 

@@ -1,0 +1,86 @@
+{
+  "riddles": [
+    {
+      "id": 1,
+      "name": "Easy Math",
+      "taskDescription": "What is 5 + 3?",
+      "correctAnswer": "1",
+      "choices": [
+        "8",
+        "10",
+        "11",
+        "7"
+      ],
+      "difficulty": "1",
+      "timeLimit": 5,
+      "hint": "5 + 2 = 7"
+    },
+    {
+      "id": 2,
+      "name": "Multiplication Challenge",
+      "taskDescription": "What is 7 × 6?",
+      "correctAnswer": "3",
+      "choices": [
+        "36",
+        "48",
+        "42",
+        "56"
+      ],
+      "difficulty": "1",
+      "timeLimit": 5,
+      "hint": "7 * 5 = 35"
+    },
+    {
+      "id": 3,
+      "name": "Order of Operations",
+      "taskDescription": "What is 12 + 6 × 3?",
+      "correctAnswer": "2",
+      "choices": [
+        "54",
+        "30",
+        "36",
+        "24"
+      ],
+      "difficulty": "2",
+      "timeLimit": 7,
+      "hint": "6 × 3 = 18"
+    },
+    {
+      "id": 4,
+      "name": "Algebra Challenge",
+      "taskDescription": "Solve for x: 3x + 7 = 28",
+      "correctAnswer": "4",
+      "choices": [
+        "5",
+        "9",
+        "6",
+        "7"
+      ],
+      "difficulty": "2",
+      "timeLimit": 7,
+      "hint": "3x = 21"
+    },
+    {
+      "id": 5,
+      "name": "Final Math Boss",
+      "taskDescription": "Solve for x: 2(x + 5)² = 98",
+      "correctAnswer": "3",
+      "choices": [
+        "7",
+        "9",
+        "2 or -12",
+        "4 or -14"
+      ],
+      "difficulty": "3",
+      "timeLimit": 8,
+      "hint": "(x + 5)² = 49"
+    }
+  ],
+  "players": [
+    {
+      "name": "odel",
+      "lowestTime": 1.56,
+      "id": 1
+    }
+  ]
+}
