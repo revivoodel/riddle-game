@@ -1,5 +1,4 @@
 
-// app.js
 
 import Player from './classes/Player.js';
 import MultipleChoiceRiddle from './classes/MultipleChoiceRiddle.js';
